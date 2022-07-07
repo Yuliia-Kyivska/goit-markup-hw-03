@@ -64,12 +64,14 @@ p {
   text-decoration: none;
   color: var(--color-dark);
 }
+
 .we-do-item,
 .benefits-item,
 .team-item {
   text-decoration: none;
   color: var(--color-dark);
 }
+
 .active-page {
   color: var(--blue-logo-color);
 }
@@ -77,11 +79,13 @@ p {
 .list {
   list-style: none;
 }
+
 .we-do-list,
 .benefits-list,
 .team-list {
   list-style: none;
 }
+
 .nav-menu {
   color: var(--color-dark);
 }
@@ -91,12 +95,12 @@ p {
   color: var(--blue-logo-color);
 }
 
-.header-contakt {
+.header-contact {
   color: var(--grey-color);
 }
 
-.header-contakt .link:hover,
-.header-contakt .link:focus {
+.header-contact.link:hover,
+.header-contact.link:focus {
   color: var(--blue-logo-color);
 }
 
@@ -200,7 +204,7 @@ p {
   clip: rect(0 0 0 0);
   clip-path: inset(50%);
   margin: -1px;
-  } 
+}
 
 .content-portfolio {
   font-size: 16px;
