@@ -69,12 +69,6 @@ h3 {
   padding-right: 15px;
 }
 
-.container .logo {
-}
-
-.main-nav .logo {
-}
-
 .logo {
   color: var(--blue-logo-color);
   font-family: 'Raleway', cursive;
@@ -127,7 +121,6 @@ h3 {
 
 .nav-menu {
   display: flex;
-  margin-left: 93px;
   color: var(--color-dark);
 }
 
@@ -140,8 +133,6 @@ h3 {
 .nav-menu .link:hover,
 .nav-menu .link:focus {
   color: var(--blue-logo-color);
-}
-.nav-item {
 }
 
 .nav-menu .nav-item {
@@ -214,6 +205,18 @@ h3 {
 }
 
 /*Button*/
+.select-list {
+  display: flex;
+  justify-content:center;
+}
+
+.select-list .select-item {
+  margin-right: 8px;
+  }
+
+.select-list .select-item:last-child {
+  margin-right: 0;
+}
 
 .select-button {
   cursor: pointer;
@@ -231,8 +234,6 @@ h3 {
 .select-button:focus {
   background-color: var(--blue-logo-color);
   color: var(--white-color);
-}
-.select-list {
 }
 
 .benefits,
@@ -267,6 +268,11 @@ h3 {
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
+}
+
+.list.select-list{
+  margin-bottom: 50px;
+
 }
 
 .team {
