@@ -20,6 +20,7 @@
   --footer-primary-color: rgba(255, 255, 255, 0.6);
   --grey-edging: rgba(238, 238, 238, 1);
   --button-shadow: rgba(0, 0, 0, 0.25);
+  --card-set-gap:30px;
 }
 
 body {
@@ -43,6 +44,11 @@ h2,
 h3 {
   padding: 0;
 }
+img{
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
 
 .header {
   font-weight: 500;
@@ -58,7 +64,10 @@ h3 {
 .main-nav {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+
+}
+.main-nav .logo{
+  margin-right: var(--card-set-gap);
 }
 
 .container {
@@ -100,7 +109,7 @@ h3 {
 
 .we-do-list .we-do-item {
   padding: 0;
-  margin-right: 30px;
+  margin-right: var(--card-set-gap);
 }
 
 .active-page {
@@ -193,7 +202,7 @@ h3 {
   letter-spacing: 0.06em;
   border-radius: 4px;
   box-shadow: 0px 4px 4px 0px var(--button-shadow);
-  margin-top: 30px;
+  margin-top: var(--card-set-gap);
 }
 
 .we-do-list,
@@ -251,10 +260,10 @@ h3 {
 }
 
 .benefits-list .benefits-item {
-  margin-right: 30px;
+  margin-right: var(--card-set-gap);
 }
 .team-list .team-item {
-  margin-right: 30px;
+  margin-right: var(--card-set-gap);
 }
 
 .section {
@@ -272,7 +281,6 @@ h3 {
 
 .list.select-list{
   margin-bottom: 50px;
-
 }
 
 .team {
@@ -302,27 +310,47 @@ h3 {
   border: 0;
   padding: 0;
   clip: rect(0 0 0 0);
-  clip-path: inset(50%);
+  clip-path: inset(100%);
   margin: -1px;
 }
 
-.content-portfolio {
+.card-text {
   font-size: 16px;
   line-height: 1.88;
+  margin-top: 4px;
+  
 }
 
-.tytle-portfolio {
+.card-heading {
   color: var(--color-dark);
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+ 
 }
-.portfolio-edging {
+.card-content {
   border-top: 0;
   border-bottom: 1px solid var(--grey-edging);
   border-right: 1px solid var(--grey-edging);
   border-left: 1px solid var(--grey-edging);
+  padding: 20px 24px;
+}
+ 
+.card-set{
+margin: 0;
+padding: 0;
+list-style: none;
+display: flex;
+flex-wrap: wrap;
+margin-left: calc(-1 * var(--card-set-gap));
+margin-top: calc(-1 * var(--card-set-gap));
+}
+
+.card-set> .card-item{
+flex-basis: calc(100%/3-1 * var(--card-set-gap));
+margin-left: var(--card-set-gap);
+margin-top: var(--card-set-gap);
 }
 
 /*footer */
