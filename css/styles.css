@@ -18,7 +18,7 @@
   --color-dark: #212121;
   --light-gray-backg: #f5f4fa;
   --footer-primary-color: rgba(255, 255, 255, 0.6);
-  --portfolio-edging: rgba(238, 238, 238, 1);
+  --grey-edging: rgba(238, 238, 238, 1);
   --button-shadow: rgba(0, 0, 0, 0.25);
 }
 
@@ -48,7 +48,7 @@ h3 {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  outline: 1px solid rgba(236, 236, 236, 1);
+  outline: 1px solid var(--grey-edging);
 }
 .list {
   list-style: none;
@@ -320,9 +320,9 @@ h3 {
 }
 .portfolio-edging {
   border-top: 0;
-  border-bottom: 1px solid var(--portfolio-edging);
-  border-right: 1px solid var(--portfolio-edging);
-  border-left: 1px solid var(--portfolio-edging);
+  border-bottom: 1px solid var(--grey-edging);
+  border-right: 1px solid var(--grey-edging);
+  border-left: 1px solid var(--grey-edging);
 }
 
 /*footer */
