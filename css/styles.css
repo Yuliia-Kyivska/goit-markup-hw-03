@@ -20,7 +20,48 @@
   --footer-primary-color: rgba(255, 255, 255, 0.6);
   --grey-edging: rgba(238, 238, 238, 1);
   --button-shadow: rgba(0, 0, 0, 0.25);
-  --card-set-gap:30px;
+  --card-set-gap: 30px;
+}
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+}
+
+ul,
+ol {
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.link {
+  text-decoration: none;
+  color: var(--color-dark);
+}
+
+.list {
+  list-style: none;
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 body {
@@ -31,24 +72,6 @@ body {
   letter-spacing: 0.03em;
   line-height: 1.71;
 }
-p {
-  font-weight: 400;
-  letter-spacing: 0.03em;
-  padding: 0;
-}
-ul {
-  padding: 0;
-}
-h1,
-h2,
-h3 {
-  padding: 0;
-}
-img{
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
 
 .header {
   font-weight: 500;
@@ -56,26 +79,9 @@ img{
   letter-spacing: 0.02em;
   outline: 1px solid var(--grey-edging);
 }
-.list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-.main-nav {
+.header-container {
   display: flex;
   align-items: center;
-
-}
-.main-nav .logo{
-  margin-right: var(--card-set-gap);
-}
-
-.container {
-  margin-left: auto;
-  margin-right: auto;
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
 }
 
 .logo {
@@ -87,6 +93,9 @@ img{
   text-decoration: none;
   display: flex;
 }
+.header .logo {
+  margin-right: 93px;
+}
 
 .dark-logo {
   color: var(--dark-logo-color);
@@ -96,68 +105,39 @@ img{
   color: var(--white-color);
 }
 
-.link {
-  text-decoration: none;
+.nav {
+  display: flex;
+  align-items: center;
   color: var(--color-dark);
 }
-
-.we-do-item,
-.benefits-item,
-.team-item {
-  text-decoration: none;
-  color: var(--color-dark);
+.nav-list {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+.nav-link,
+.contact-link {
+  display: flex;
+  align-items: center;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+.contact-list {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  margin-left: auto;
 }
 
-.we-do-list .we-do-item {
-  padding: 0;
-  margin-right: var(--card-set-gap);
+.nav-link .link:hover,
+.nav-link .link:focus {
+  color: var(--blue-logo-color);
 }
 
 .active-page {
   color: var(--blue-logo-color);
 }
-
-.container .contact-list {
-  margin-left: 331px;
-}
-
-.contact-list {
-  display: flex;
-}
-
-.contact-list .nav-item + .nav-item {
-  margin-left: 50px;
-}
-
-.nav-menu {
-  display: flex;
-  color: var(--color-dark);
-}
-
-.nav-menu .link {
-  display: block;
-  padding-top: 32px;
-  padding-bottom: 32px;
-}
-
-.nav-menu .link:hover,
-.nav-menu .link:focus {
-  color: var(--blue-logo-color);
-}
-
-.nav-menu .nav-item {
-  margin-right: 50px;
-}
-
-.nav-menu .nav-item:last-child {
-  margin-right: 0;
-}
-.team-list .team-item:last-child {
-  margin-right: 0;
-}
-.benefits-list .benefits-item:last-child {
-  margin-right: 0;
-}
+/* ***************************** ** */
 
 .header-contact {
   color: var(--grey-color);
@@ -171,10 +151,12 @@ img{
 /*Hero*/
 
 .hero {
-  background: var(--background-dark-grey);
+  background-color: var(--background-dark-grey);
   display: flex;
   margin-top: 0;
-  flex-wrap: wrap;
+  padding-top: 200px;
+  padding-bottom: 280px;
+  text-align: center;
 }
 .hero-title {
   color: var(--white-color);
@@ -184,10 +166,10 @@ img{
   line-height: 1.4;
   text-align: center;
   letter-spacing: 0.06em;
-  width: 100%;
-}
-.hero .hero-button {
-  margin: 0 auto;
+  max-width: 696px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
 }
 
 .hero-button {
@@ -198,52 +180,12 @@ img{
   font-weight: 700;
   font-size: 16px;
   line-height: 1.9;
-  text-align: center;
-  align-items: center;
+
   letter-spacing: 0.06em;
   border-radius: 4px;
   box-shadow: 0px 4px 4px 0px var(--button-shadow);
-  margin-top: var(--card-set-gap);
-}
-
-.we-do-list,
-.benefits-list,
-.team-list {
-  list-style: none;
-  display: flex;
-  padding: 0;
-}
-
-/*Button*/
-.select-list {
-  display: flex;
-  justify-content:center;
-}
-
-.select-list .select-item {
-  margin-right: 8px;
-  }
-
-.select-list .select-item:last-child {
-  margin-right: 0;
-}
-
-.select-button {
-  cursor: pointer;
-  font-family: inherit;
-  background-color: var(--light-gray-backg);
-  color: var(--color-dark);
   border: none;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.6;
-  border-radius: 4px;
-}
-
-.select-button:hover,
-.select-button:focus {
-  background-color: var(--blue-logo-color);
-  color: var(--white-color);
+  padding: 10px 32px;
 }
 
 .benefits,
@@ -252,24 +194,23 @@ img{
   margin-top: 0;
 }
 
+.card-set > .benefits-item {
+  flex-basis: calc(100% / 4 - 1 * var(--card-set-gap));
+  margin-left: var(--card-set-gap);
+  margin-top: var(--card-set-gap);
+}
 .benefits-tytle {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
   color: var(--color-dark);
+  margin-bottom: 10px;
 }
-
-.benefits-list .benefits-item {
-  margin-right: var(--card-set-gap);
-}
-.team-list .team-item {
-  margin-right: var(--card-set-gap);
-}
-
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+.benefits-text {
+  font-weight: 400;
+  letter-spacing: 0.03em;
+  line-height: 1.7;
 }
 
 .section-tytle {
@@ -278,14 +219,22 @@ img{
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
-}
-
-.list.select-list{
   margin-bottom: 50px;
+}
+.card-set > .we-do-item {
+  flex-basis: calc(100% / 3 - 1 * var(--card-set-gap));
+  margin-left: var(--card-set-gap);
+  margin-top: var(--card-set-gap);
 }
 
 .team {
   background-color: var(--light-gray-backg);
+}
+
+.card-set > .team-item {
+  flex-basis: calc(100% / 4 - 1 * var(--card-set-gap));
+  margin-left: var(--card-set-gap);
+  margin-top: var(--card-set-gap);
 }
 
 .team-specialist,
@@ -294,9 +243,14 @@ img{
   line-height: 1.2;
   text-align: center;
 }
+.team-specialist {
+  font-weight: 400;
+  letter-spacing: 0.03em;
+}
 
 .team-tytle {
   font-weight: 500;
+  letter-spacing: 0.03em;
   color: var(--color-dark);
 }
 
@@ -319,7 +273,7 @@ img{
   font-size: 16px;
   line-height: 1.88;
   margin-top: 4px;
-  
+  font-weight: 400;
 }
 
 .card-heading {
@@ -328,7 +282,6 @@ img{
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
- 
 }
 .card-content {
   border-top: 0;
@@ -337,21 +290,53 @@ img{
   border-left: 1px solid var(--grey-edging);
   padding: 20px 24px;
 }
- 
-.card-set{
-margin: 0;
-padding: 0;
-list-style: none;
-display: flex;
-flex-wrap: wrap;
-margin-left: calc(-1 * var(--card-set-gap));
-margin-top: calc(-1 * var(--card-set-gap));
+
+.card-set {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: calc(-1 * var(--card-set-gap));
+  margin-top: calc(-1 * var(--card-set-gap));
 }
 
-.card-set> .card-item{
-flex-basis: calc(100%/3-1 * var(--card-set-gap));
-margin-left: var(--card-set-gap);
-margin-top: var(--card-set-gap);
+.card-set > .card-item {
+  flex-basis: calc(100% / 3-1 * var(--card-set-gap));
+  margin-left: var(--card-set-gap);
+  margin-top: var(--card-set-gap);
+}
+.select-list {
+  display: flex;
+  justify-content: center;
+}
+
+.select-list .select-item {
+  margin-right: 8px;
+}
+
+.select-list .select-item:last-child {
+  margin-right: 0;
+}
+.list.select-list {
+  margin-bottom: 50px;
+}
+.select-button {
+  cursor: pointer;
+  font-family: inherit;
+  background-color: var(--light-gray-backg);
+  color: var(--color-dark);
+  border: none;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  border-radius: 4px;
+}
+
+.select-button:hover,
+.select-button:focus {
+  background-color: var(--blue-logo-color);
+  color: var(--white-color);
 }
 
 /*footer */
@@ -359,6 +344,10 @@ margin-top: var(--card-set-gap);
 .footer {
   background-color: var(--background-dark-grey);
   display: block;
+}
+.footer-container {
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 .footer .logo {
 }
