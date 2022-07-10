@@ -188,12 +188,6 @@ body {
   padding: 10px 32px;
 }
 
-.benefits,
-.we-do,
-.team {
-  margin-top: 0;
-}
-
 .card-set > .benefits-item {
   flex-basis: calc(100% / 4 - 1 * var(--card-set-gap));
   margin-left: var(--card-set-gap);
@@ -229,6 +223,9 @@ body {
 
 .team {
   background-color: var(--light-gray-backg);
+  margin-top: 94px;
+  padding-bottom: 94px;
+ 
 }
 
 .card-set > .team-item {
@@ -236,6 +233,17 @@ body {
   margin-left: var(--card-set-gap);
   margin-top: var(--card-set-gap);
 }
+.team-content{
+    align-items: center;
+    background-color: var(--white-color);
+    border-top: 0;
+    border-bottom: solid 1px var(--button-shadow);
+    border-right: solid 1px var(--button-shadow);
+    border-left: solid 1px var(--button-shadow);
+    padding: 30px ;
+    margin: 0;
+}
+    
 
 .team-specialist,
 .team-tytle {
@@ -246,12 +254,16 @@ body {
 .team-specialist {
   font-weight: 400;
   letter-spacing: 0.03em;
+  margin-top: 10px;
+  
+
 }
 
 .team-tytle {
   font-weight: 500;
   letter-spacing: 0.03em;
   color: var(--color-dark);
+
 }
 
 /* портфолио контент */
@@ -337,6 +349,9 @@ body {
 .select-button:focus {
   background-color: var(--blue-logo-color);
   color: var(--white-color);
+}
+.portfolio-container{
+  padding-bottom: 94px;
 }
 
 /*footer */
