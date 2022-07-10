@@ -85,6 +85,7 @@ img{
   font-size: 26px;
   line-height: 1.2;
   text-decoration: none;
+  display: flex;
 }
 
 .dark-logo {
@@ -170,7 +171,7 @@ img{
 /*Hero*/
 
 .hero {
-  background-color: var(--background-dark-grey);
+  background: var(--background-dark-grey);
   display: flex;
   margin-top: 0;
   flex-wrap: wrap;
