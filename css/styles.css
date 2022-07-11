@@ -237,9 +237,10 @@ body {
     align-items: center;
     background-color: var(--white-color);
     border-top: 0;
-    border-bottom: solid 1px var(--button-shadow);
-    border-right: solid 1px var(--button-shadow);
-    border-left: solid 1px var(--button-shadow);
+    border-bottom: 1px solid var(--button-shadow);
+    border-right: 1px solid var(--button-shadow);
+    border-left: 1px solid var(--button-shadow);
+    border-radius: 0px 0px 4px 4px;
     padding: 30px ;
     margin: 0;
 }
