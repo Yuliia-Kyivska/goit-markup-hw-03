@@ -49,7 +49,7 @@ img {
 
 .link {
   text-decoration: none;
-  color: var(--color-dark);
+  color: var(--grey-color);
 }
 
 .list {
@@ -246,7 +246,9 @@ body {
     margin: 0;
 }
     
-
+h3.team-title{
+  margin-bottom: 10px;
+}
 .team-specialist,
 .team-title {
   font-size: 16px;
@@ -367,6 +369,8 @@ body {
   font-style: inherit;
 }
 .address-list{
+  display: flex;
+  flex-direction: column;
   gap: 9px;
 }
 .address-link {
